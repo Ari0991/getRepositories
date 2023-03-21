@@ -1,0 +1,126 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  width: 661px;
+  border: 2px solid #e27beb;
+
+  background-color: #c4c4c4;
+}
+
+.search__wrapper {
+  margin: 62px auto 72px auto;
+}
+.search__input {
+  position: relative;
+  all: unset;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+  font-size: 48px;
+  width: 500px;
+  height: 61px;
+  background: #ffffff;
+}
+
+.search__results {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 330px;
+}
+
+.search__item {
+  font-size: 48px;
+  width: 513px;
+  min-height: 61px;
+  background: #ffffff;
+  border: 2px solid black;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.search__list {
+  margin-top: 45px;
+  padding: 0;
+  list-style: none;
+}
+
+.search__card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 17px;
+  width: 503px;
+  height: 101px;
+  border: 1px solid black;
+  background-color: #e27beb;
+}
+
+.search__card-text {
+  font-size: 24px;
+  white-space: pre;
+}
+
+.search__card-button--close {
+  position: relative;
+  align-self: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: #e27beb;
+  z-index: 5;
+  cursor: pointer;
+}
+.search__card-button--close::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: red;
+  top: 50%;
+  right: 0;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.search__card-button--close::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: red;
+  top: 50%;
+  right: 0;
+  transform: rotate(-45deg);
+}
+
+/* .search__card::before {
+  position: absolute;
+  width: 42px;
+  height: 2px;
+  background-color: red;
+}
+
+.search__card::after {
+} */
